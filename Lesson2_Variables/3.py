@@ -1,5 +1,4 @@
 # 3. Работаем с выводом данных
-# 2. Сдача всем
 def is_natural(string):
     while True:
         print(string)
