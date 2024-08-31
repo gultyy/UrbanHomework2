@@ -1,3 +1,10 @@
+"""
+Часть 2. Пропуск тестов.
+
+    Классы RunnerTest дополнить атрибутом is_frozen = False и TournamentTest атрибутом is_frozen = True.
+    Напишите соответствующий декоратор к каждому методу (кроме @classmethod), который при значении is_frozen = False
+    будет выполнять тесты, а is_frozen = True - пропускать и выводить сообщение 'Тесты в этом кейсе заморожены'.
+"""
 import unittest
 from HumanMoveTest import runner_and_tournament as rt
 from HumanMoveTest import runner
