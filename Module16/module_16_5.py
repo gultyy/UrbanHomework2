@@ -15,11 +15,6 @@ class User(BaseModel):
     username: str
     age: int
 
-class Message(BaseModel):
-    id: int = None
-    text: str
-
-
 @app.get("/")
 def get_all_users(request: Request) -> HTMLResponse:
     return templates.TemplateResponse("users.html", {"request": request, "users": users})
